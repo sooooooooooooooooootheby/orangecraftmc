@@ -14,6 +14,8 @@ export default defineNuxtConfig({
 			},
 			link: [{ rel: "icon", type: "image/x-icon", href: "/orange.png" }],
 		},
+		pageTransition: { name: 'page', mode: 'out-in' },
+		layoutTransition: { name: 'layout', mode: 'out-in' }
 	},
 
 	vite: {
