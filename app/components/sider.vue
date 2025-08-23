@@ -16,7 +16,7 @@
 					<div class="size-1 rounded-full bg-gray-600" v-if="isPath(item.path)"></div>
 				</NuxtLink>
 			</div>
-			<div class="my-2 h-0 w-full border-t-1 border-gray-200"></div>
+			<!-- <div class="my-2 h-0 w-full border-t-1 border-gray-200"></div>
 			<div>
 				<div class="mb-2 ml-3 flex items-center gap-2 text-gray-600">
 					<Icon name="gravity-ui:magic-wand" class="text-xl" />
@@ -35,7 +35,7 @@
 						</NuxtLink>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </template>
@@ -44,9 +44,9 @@
 const { data: main_list } = await useAsyncData("main", () => {
 	return queryCollection("main_list").select("title", "path", "icon", "index").order("index", "ASC").all();
 });
-const { data: playing_list } = await useAsyncData("playing", () => {
-	return queryCollection("playing_list").select("title", "path", "icon").all();
-});
+// const { data: playing_list } = await useAsyncData("playing", () => {
+// 	return queryCollection("playing_list").select("title", "path", "icon").all();
+// });
 
 const route = useRoute();
 

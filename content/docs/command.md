@@ -2,6 +2,7 @@
 cover: /0.png
 icon: gravity-ui:curly-brackets
 index: 2
+title: 命令大全
 ---
 
 # 命令大全

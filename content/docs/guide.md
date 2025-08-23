@@ -1,7 +1,8 @@
 ---
 cover: /0.png
-icon: gravity-ui:heart-fill
+icon: gravity-ui:heart
 index: 0
+title: 关于我们
 ---
 
 # 关于我们

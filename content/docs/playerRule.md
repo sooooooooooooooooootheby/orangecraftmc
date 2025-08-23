@@ -2,6 +2,7 @@
 cover: /0.png
 icon: gravity-ui:file-exclamation
 index: 1
+title: 玩家守则
 ---
 
 # 玩家守则
