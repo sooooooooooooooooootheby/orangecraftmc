@@ -1,12 +1,24 @@
 <template>
-    <div v-if="docs">
-        <div class="w-full h-82 overflow-hidden flex items-center">
-            <img :src="docs.cover" alt="cover" class="w-full object-cover" />
-        </div>
-        <div class="typography max-w-3xl mx-auto my-8 px-4">
-            <ContentRenderer :value="docs" />
-        </div>
-    </div>
+	<div v-if="docs" class="flex flex-col items-center">
+		<div class="flex h-82 w-full items-center overflow-hidden">
+			<img :src="docs.cover" alt="cover" class="w-full object-cover" />
+		</div>
+		<div class="flex w-3xl pt-8 relative">
+			<div class="typography flex-1">
+				<ContentRenderer :value="docs" />
+			</div>
+			<!-- <div class="ml-4 fixed right-12">
+				<p class="mb-2 text-lg font-bold">On This Page</p>
+				<ul v-for="item in dir">
+					<li :key="item.id" class="text-gray-700" :class="{ 'ml-4': item.tag === 'h2' }">
+						<a :href="'#' + item.id">
+							{{ item.text }}
+						</a>
+					</li>
+				</ul>
+			</div> -->
+		</div>
+	</div>
 </template>
 
 <script lang="ts" setup>
@@ -14,8 +26,26 @@ definePageMeta({
 	layout: "docs",
 });
 
+// interface dir {
+// 	tag: string;
+// 	id: string;
+// 	text: string;
+// }
+
+// const dir = ref<dir[]>([]);
+
 const route = useRoute();
-const { data: docs } = await useAsyncData(route.path, () => {
-	return queryCollection("docs").path(route.path).first();
+const { data: docs } = await useAsyncData(route.path, async () => {
+	const d = await queryCollection("docs").path(route.path).first();
+	// dir.value =
+	// 	d?.body.value
+	// 		?.filter((item: any) => typeof item[0] === "string" && item[0].startsWith("h"))
+	// 		.map((item: any) => ({
+	// 			tag: item[0],
+	// 			id: item[1]?.id || "",
+	// 			text: item[2],
+	// 		})) || [];
+
+	return d;
 });
 </script>
