@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: AlimamaFangYuanTiVF;
+    src: url("/typeface/AlimamaFangYuanTiVF.ttf");
+}
+
+* {
+    font-family: AlimamaFangYuanTiVF;
+}
