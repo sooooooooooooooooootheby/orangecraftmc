@@ -8,7 +8,7 @@
 			<div v-for="item in main_list">
 				<NuxtLink
 					:to="item.path"
-					class="flex items-center gap-2 rounded-lg px-3 py-2 text-gray-600 hover:bg-gray-200"
+					class="flex items-center gap-2 rounded-lg px-3 py-2 text-gray-600 hover:bg-gray-200 duration-150"
 					:class="{ 'bg-gray-300 text-gray-800': isPath(item.path) }"
 				>
 					<Icon :name="item.icon" class="text-xl" />
@@ -26,7 +26,7 @@
 					<div v-for="item in playing_list" class="ml-5 border-l-1 border-gray-200 pl-2">
 						<NuxtLink
 							:to="item.path"
-							class="flex items-center gap-2 rounded-lg px-3 py-2 text-gray-600 hover:bg-gray-200"
+							class="flex items-center gap-2 rounded-lg px-3 py-2 text-gray-600 hover:bg-gray-200 duration-150"
 							:class="{ 'bg-gray-300 text-gray-800': isPath(item.path) }"
 						>
 							<Icon :name="item.icon" class="text-xl" />
