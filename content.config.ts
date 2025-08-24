@@ -19,6 +19,15 @@ export default defineContentConfig({
 				icon: z.string(),
 			})
 		}),
+		command_list: defineCollection({
+			type: "page",
+			source: "docs/command/*.md",
+			schema: z.object({
+				title: z.string(),
+				icon: z.string(),
+				index: z.string(),
+			})
+		}),
 		// playing_list: defineCollection({
 		//     type: "page",
 		// 	source: "docs/playing/*.md",
