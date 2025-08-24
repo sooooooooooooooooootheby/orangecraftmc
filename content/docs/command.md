@@ -1,6 +1,6 @@
 ---
 cover: /0.png
-icon: gravity-ui:curly-brackets
+icon: gravity-ui:terminal
 index: 2
 title: 命令大全
 ---
