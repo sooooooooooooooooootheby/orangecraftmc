@@ -11,6 +11,14 @@ export default defineContentConfig({
 				index: z.number(),
 			}),
 		}),
+		playrule_list: defineCollection({
+			type: "page",
+			source: "docs/playrule/*.md",
+			schema: z.object({
+				title: z.string(),
+				icon: z.string(),
+			})
+		}),
 		// playing_list: defineCollection({
 		//     type: "page",
 		// 	source: "docs/playing/*.md",
