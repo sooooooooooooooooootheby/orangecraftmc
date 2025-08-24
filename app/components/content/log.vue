@@ -38,9 +38,10 @@ const log = ref<log[]>([
 	width: 0.5rem;
 	height: 0.5rem;
 	border-radius: 9999px;
-	background-color: oklch(83.7% 0.128 66.29);
+	background-color: oklch(87.2% 0.01 258.338);
 	position: relative;
     left: -1.7rem;
     top: 1.8rem;
+	outline: 4px solid #ffffff;
 }
 </style>
