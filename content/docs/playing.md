@@ -1,5 +1,5 @@
 ---
-cover: /0.png
+cover: /cover/2.png
 icon: gravity-ui:magic-wand
 index: 4
 title: 特色玩法
