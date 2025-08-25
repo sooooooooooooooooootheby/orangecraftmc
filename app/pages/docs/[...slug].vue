@@ -1,9 +1,9 @@
 <template>
 	<div v-if="docs" class="flex flex-col items-center">
-		<div class="flex h-82 w-full items-center overflow-hidden">
-			<img :src="docs.cover" alt="cover" class="w-full object-cover" />
+		<div class="flex h-82 w-full items-center overflow-hidden" v-if="docs.cover">
+			<img :src="docs.cover" alt="cover" class="h-full w-full object-cover" />
 		</div>
-		<div class="flex w-3xl pt-8 relative">
+		<div class="relative flex w-3xl pt-8">
 			<div class="typography flex-1">
 				<ContentRenderer :value="docs" />
 			</div>
