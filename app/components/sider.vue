@@ -1,5 +1,5 @@
 <template>
-	<div class="h-screen w-68 overflow-y-auto border-r border-gray-200 bg-gray-50 mb-4">
+	<div class="h-screen w-68 overflow-y-auto border-r border-gray-200 bg-gray-50">
 		<NuxtLink to="/" class="flex w-full items-center justify-center gap-3 py-6">
 			<img src="/orange.png" alt="logo" class="w-8" />
 			<span class="font-bold text-gray-800">Orange Craft MC</span>
