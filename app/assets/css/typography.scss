@@ -187,7 +187,14 @@
 		margin-top: 0.75em;
 	}
 	ol {
-		list-style-type: decimal;
+		li {
+			list-style-type: decimal;
+		}
+	}
+	ul {
+		li {
+			list-style-type: disc;
+		}
 	}
 	ol#footnotes {
 		font-size: 0.95em;
@@ -248,7 +255,6 @@
 		-webkit-animation-iteration-count: 1;
 		-webkit-animation-timing-function: ease-in-out;
 	}
-
 
 	table {
 		width: 100%;
