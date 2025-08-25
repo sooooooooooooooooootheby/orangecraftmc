@@ -1,4 +1,4 @@
-modu:e.exports = {
+module.exports = {
     apps: [
         {
             name: 'orangecraftmcdocs',
