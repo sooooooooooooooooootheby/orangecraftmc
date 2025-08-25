@@ -5,7 +5,7 @@ index: 1
 isDir: true
 ---
 
-## 领地
+## 传送 & 家
 
 `/spawn` 传送至主城
 
