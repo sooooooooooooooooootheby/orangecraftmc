@@ -4,7 +4,7 @@
 			<div class="flex gap-4 rounded-xl border-1 border-gray-300 bg-gray-50 px-4 py-3">
 				<div class="jucestify-center flex flex-1 flex-col">
 					<span class="text-xl font-bold text-gray-800">{{ fz.name }}</span>
-					<span class="text-sm text-gray-600">{{ fz.info }}</span>
+					<!-- <span class="text-sm text-gray-600">{{ fz.info }}</span> -->
 					<span class="mt-4 text-sm text-gray-700">{{ fz.role }}</span>
 				</div>
 				<div class="flex items-center">
@@ -14,7 +14,7 @@
             <div class="flex gap-4 rounded-xl border-1 border-gray-300 bg-gray-50 px-4 py-3 opacity-0">
 				<div class="jucestify-center flex flex-1 flex-col">
 					<span class="text-xl font-bold text-gray-800">{{ fz.name }}</span>
-					<span class="text-sm text-gray-600">{{ fz.info }}</span>
+					<!-- <span class="text-sm text-gray-600">{{ fz.info }}</span> -->
 					<span class="mt-4 text-sm text-gray-700">{{ fz.role }}</span>
 				</div>
 				<div class="flex items-center">
@@ -27,7 +27,7 @@
 				<div class="flex gap-4 rounded-xl border-1 border-gray-300 bg-gray-50 px-4 py-3">
 					<div class="jucestify-center flex flex-1 flex-col">
 						<span class="text-xl font-bold text-gray-800">{{ item.name }}</span>
-						<span class="text-sm text-gray-600">{{ item.info }}</span>
+						<!-- <span class="text-sm text-gray-600">{{ item.info }}</span> -->
 						<span class="mt-4 text-sm text-gray-700">{{ item.role }}</span>
 					</div>
 					<div class="flex items-center">
@@ -41,7 +41,7 @@
 				<div class="flex gap-4 rounded-xl border-1 border-gray-300 bg-gray-50 px-4 py-3">
 					<div class="jucestify-center flex flex-1 flex-col">
 						<span class="text-xl font-bold text-gray-800">{{ item.name }}</span>
-						<span class="text-sm text-gray-600">{{ item.info }}</span>
+						<!-- <span class="text-sm text-gray-600">{{ item.info }}</span> -->
 						<span class="mt-4 text-sm text-gray-700">{{ item.role }}</span>
 					</div>
 					<div class="flex items-center">
