@@ -1,6 +1,6 @@
 <template>
 	<div v-if="docs" class="flex flex-col items-center">
-		<div class="flex h-82 w-full items-center overflow-hidden" v-if="docs.cover">
+		<div class="flex h-[320px] w-full items-center overflow-hidden" v-if="docs.cover">
 			<img :src="docs.cover" alt="cover" class="h-full w-full object-cover" />
 		</div>
 		<div class="pt-8">
