@@ -3,19 +3,28 @@
 		<div class="flex h-82 w-full items-center overflow-hidden" v-if="docs.cover">
 			<img :src="docs.cover" alt="cover" class="h-full w-full object-cover" />
 		</div>
-		<div class="relative flex w-3xl pt-8">
-			<div class="typography flex-1">
-				<ContentRenderer :value="docs" />
-			</div>
-			<div class="ml-4 fixed right-12 w-xs overflow-hidden" v-if="docs.isDir">
-				<p class="mb-2 text-lg font-bold">On This Page</p>
-				<ul v-for="item in dir">
-					<li :key="item.id" class="text-gray-700">
-						<a :href="'#' + item.id" class="hover:text-orange-400">
-							{{ item.text }}
-						</a>
-					</li>
-				</ul>
+		<div class="pt-8">
+			<div class="mx-auto w-full max-w-[1200px] px-4 md:px-6">
+				<div class="grid grid-cols-1 items-start gap-6 md:grid-cols-[minmax(0,1fr)_16rem]">
+					<main class="w-full min-w-0">
+						<div class="typography mx-auto max-w-[65ch]">
+							<ContentRenderer :value="docs" />
+						</div>
+					</main>
+
+					<aside v-if="docs.isDir" class="hidden w-64 flex-shrink-0 self-start md:block">
+						<div class="sticky top-4 max-h-[calc(100vh-1rem)] overflow-auto">
+							<p class="mb-2 text-lg font-bold">On This Page</p>
+							<ul>
+								<li v-for="item in dir" :key="item.id" class="text-gray-700 text-sm">
+									<a :href="'#' + item.id" class="block py-1 hover:text-orange-400">
+										{{ item.text }}
+									</a>
+								</li>
+							</ul>
+						</div>
+					</aside>
+				</div>
 			</div>
 		</div>
 	</div>
