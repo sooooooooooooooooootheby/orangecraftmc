@@ -5,7 +5,10 @@
 		</div>
 		<div class="pt-8">
 			<div class="mx-auto w-full max-w-[1200px] px-4 md:px-6">
-				<div class="grid grid-cols-1 items-start gap-6 md:grid-cols-[minmax(0,1fr)_16rem]">
+				<div
+					class="grid grid-cols-1 items-start gap-6 md:grid-cols-[minmax(0,1fr)_16rem]"
+					:class="{ 'flex!': !docs.isDir }"
+					>
 					<main class="w-full min-w-0">
 						<div class="typography mx-auto max-w-[65ch]">
 							<ContentRenderer :value="docs" />
