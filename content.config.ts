@@ -44,6 +44,7 @@ export default defineContentConfig({
 				title: z.string(),
 				icon: z.string(),
 				cover: z.string(),
+				isDir: z.boolean(),
 			}),
 		}),
 	},

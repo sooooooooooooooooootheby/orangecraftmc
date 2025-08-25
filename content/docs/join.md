@@ -2,6 +2,7 @@
 icon: gravity-ui:plug-connection
 index: 0
 title: 加入服务器
+isDir: true
 ---
 
 ### 审核

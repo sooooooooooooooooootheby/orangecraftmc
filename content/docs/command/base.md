@@ -2,7 +2,10 @@
 icon: gravity-ui:exclamation-shape
 title: 基础命令
 index: 0
+isDir: true
 ---
+
+## 基础命令
 
 `/cd` 打开菜单
 

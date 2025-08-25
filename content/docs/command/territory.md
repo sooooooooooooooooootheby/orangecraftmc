@@ -2,7 +2,10 @@
 icon: gravity-ui:flag
 title: 领地
 index: 2
+isDir: true
 ---
+
+## 领地
 
 `/res` 游戏内查看领地指令帮助
 

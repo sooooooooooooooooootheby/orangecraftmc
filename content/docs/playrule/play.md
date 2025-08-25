@@ -1,6 +1,7 @@
 ---
 icon: gravity-ui:card-spade
 title: 游玩守则
+isDir: true
 ---
 
 ::tip

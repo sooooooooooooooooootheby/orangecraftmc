@@ -2,7 +2,10 @@
 icon: gravity-ui:music-note
 title: 全服音乐
 index: 4
+isDir: true
 ---
+
+## 全服音乐
 
 `/music [音乐ID/网易云分享链接]` 点歌
 

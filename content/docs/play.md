@@ -3,6 +3,7 @@ cover: /cover/1.png
 icon: gravity-ui:location-arrow
 index: 3
 title: 玩法指南
+isDir: true
 ---
 
 ## 服务器专属客户端

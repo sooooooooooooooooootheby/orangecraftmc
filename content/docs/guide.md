@@ -3,13 +3,14 @@ cover: /cover/4.png
 icon: gravity-ui:heart
 index: -1
 title: 关于我们
+isDir: true
 ---
 
 ![2025.8.17 服务器内测结束玩家大合影](/guide/group_photo.png)
 
 2025.8.17 服务器内测结束玩家大合影
 
-# 关于我们
+## 关于我们
 
 欢迎来到OrangCraftmc服务器, 在游玩服务器前请仔细阅读服务器文档
 

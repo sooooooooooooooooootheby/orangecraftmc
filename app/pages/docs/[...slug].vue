@@ -7,16 +7,16 @@
 			<div class="typography flex-1">
 				<ContentRenderer :value="docs" />
 			</div>
-			<!-- <div class="ml-4 fixed right-12">
+			<div class="ml-4 fixed right-12 w-xs overflow-hidden" v-if="docs.isDir">
 				<p class="mb-2 text-lg font-bold">On This Page</p>
 				<ul v-for="item in dir">
-					<li :key="item.id" class="text-gray-700" :class="{ 'ml-4': item.tag === 'h2' }">
-						<a :href="'#' + item.id">
+					<li :key="item.id" class="text-gray-700">
+						<a :href="'#' + item.id" class="hover:text-orange-400">
 							{{ item.text }}
 						</a>
 					</li>
 				</ul>
-			</div> -->
+			</div>
 		</div>
 	</div>
 </template>
@@ -26,25 +26,25 @@ definePageMeta({
 	layout: "docs",
 });
 
-// interface dir {
-// 	tag: string;
-// 	id: string;
-// 	text: string;
-// }
+interface dir {
+	tag: string;
+	id: string;
+	text: string;
+}
 
-// const dir = ref<dir[]>([]);
+const dir = ref<dir[]>([]);
 
 const route = useRoute();
 const { data: docs } = await useAsyncData(route.path, async () => {
 	const d = await queryCollection("docs").path(route.path).first();
-	// dir.value =
-	// 	d?.body.value
-	// 		?.filter((item: any) => typeof item[0] === "string" && item[0].startsWith("h"))
-	// 		.map((item: any) => ({
-	// 			tag: item[0],
-	// 			id: item[1]?.id || "",
-	// 			text: item[2],
-	// 		})) || [];
+	dir.value =
+		d?.body.value
+			?.filter((item: any) => typeof item[0] === "string" && item[0].startsWith("h"))
+			.map((item: any) => ({
+				tag: item[0],
+				id: item[1]?.id || "",
+				text: item[2],
+			})) || [];
 
 	return d;
 });
