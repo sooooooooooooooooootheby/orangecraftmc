@@ -5,12 +5,9 @@
 		</div>
 		<div class="pt-8">
 			<div class="mx-auto w-full max-w-[1200px] px-4 md:px-6">
-				<div
-					class="grid grid-cols-1 items-start gap-6 md:grid-cols-[minmax(0,1fr)_16rem]"
-					:class="{ 'flex!': !docs.isDir }"
-					>
-					<main class="w-full min-w-0">
-						<div class="typography mx-auto max-w-[65ch]">
+				<div class="grid grid-cols-1 items-start gap-6 md:grid-cols-[minmax(0,1fr)_16rem]" :class="{ 'flex!': !docs.isDir }">
+					<main class="w-full min-w-0" :class="{ 'max-w-[1200px]': !docs.isDir, 'max-w-[65ch]': docs.isDir }">
+						<div class="typography mx-auto">
 							<ContentRenderer :value="docs" />
 						</div>
 					</main>
@@ -19,7 +16,7 @@
 						<div class="sticky top-4 max-h-[calc(100vh-1rem)] overflow-auto">
 							<p class="mb-2 text-lg font-bold">On This Page</p>
 							<ul>
-								<li v-for="item in dir" :key="item.id" class="text-gray-700 text-sm">
+								<li v-for="item in dir" :key="item.id" class="text-sm text-gray-700">
 									<a :href="'#' + item.id" class="block py-1 hover:text-orange-400">
 										{{ item.text }}
 									</a>
