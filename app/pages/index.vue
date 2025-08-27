@@ -8,5 +8,8 @@
 </template>
 
 <script lang='ts' setup>
-
+useSeoMeta({
+	title: `Orange Craft Mc`,
+	ogTitle: `Orange Craft Mc`,
+});
 </script>

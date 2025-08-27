@@ -57,4 +57,9 @@ const { data: docs } = await useAsyncData(route.path, async () => {
 
 	return d;
 });
+
+useSeoMeta({
+	title: `${docs.value?.title} | Orange Craft Mc`,
+	ogTitle: `${docs.value?.title} | Orange Craft Mc`,
+});
 </script>
