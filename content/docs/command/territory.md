@@ -1,7 +1,6 @@
 ---
 icon: gravity-ui:flag
 title: 领地
-index: 2
 isDir: true
 ---
 

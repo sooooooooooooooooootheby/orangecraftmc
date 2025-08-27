@@ -1,7 +1,6 @@
 ---
 cover: /cover/4.png
 icon: gravity-ui:heart
-index: -1
 title: 关于我们
 isDir: true
 ---
